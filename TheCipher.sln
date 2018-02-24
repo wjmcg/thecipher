@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCipher", "TheCipher\TheCipher.csproj", "{3BADA1D2-6CDD-4C75-BB03-F0EDBB473167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciphers.Test", "Ciphers.Test\Ciphers.Test.csproj", "{F4678569-FC08-4F78-B648-1F843E1F8DAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciphers", "Ciphers\Ciphers.csproj", "{00DB7D7B-830B-41EF-AF3C-B44E72EF2515}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BADA1D2-6CDD-4C75-BB03-F0EDBB473167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BADA1D2-6CDD-4C75-BB03-F0EDBB473167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BADA1D2-6CDD-4C75-BB03-F0EDBB473167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BADA1D2-6CDD-4C75-BB03-F0EDBB473167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4678569-FC08-4F78-B648-1F843E1F8DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4678569-FC08-4F78-B648-1F843E1F8DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4678569-FC08-4F78-B648-1F843E1F8DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4678569-FC08-4F78-B648-1F843E1F8DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00DB7D7B-830B-41EF-AF3C-B44E72EF2515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00DB7D7B-830B-41EF-AF3C-B44E72EF2515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00DB7D7B-830B-41EF-AF3C-B44E72EF2515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00DB7D7B-830B-41EF-AF3C-B44E72EF2515}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EE533CC-7442-49F3-A127-994F517B15B9}
+	EndGlobalSection
+EndGlobal
