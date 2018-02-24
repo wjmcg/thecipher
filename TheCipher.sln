@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCipher", "TheCipher\TheCipher.csproj", "{3BADA1D2-6CDD-4C75-BB03-F0EDBB473167}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00DB7D7B-830B-41EF-AF3C-B44E72EF2515} = {00DB7D7B-830B-41EF-AF3C-B44E72EF2515}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciphers.Test", "Ciphers.Test\Ciphers.Test.csproj", "{F4678569-FC08-4F78-B648-1F843E1F8DAE}"
 EndProject
