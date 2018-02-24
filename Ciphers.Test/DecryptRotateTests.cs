@@ -12,8 +12,7 @@ namespace Ciphers.Test
     {
         IEncryptor ise;
 
-        [TestInitialize]
-        public void TestInit()
+        public DecryptRotateTests()
         {
             ise = new DecryptRotate(3);
         }
@@ -45,7 +44,7 @@ namespace Ciphers.Test
         public void TestAllCharactersDecrypt()
         {
             //This just tests no characters cause an error.
-            for (char c = char.MinValue; c <= char.MaxValue; c++)
+            for (char c = char.MinValue; c <= 0xFF; c++)
             {
                 char output = ise.Map(c);
                 Assert.AreNotEqual(c, output, "Character seems to be encypting to itself.");
