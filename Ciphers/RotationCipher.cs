@@ -45,8 +45,8 @@ namespace Ciphers
             //Sort out the sets which will be rotated.
             for (char c = char.MinValue; c <= maxCharacterValue; c++)  //Covers all UTF-8
             {
-                if (char.IsUpper(c)) uppers.Add(c);
-                else if (char.IsLower(c)) lowers.Add(c);
+                if (char.IsUpper(c) && c <= 'Z') uppers.Add(c);
+                else if (char.IsLower(c) && c <= 'z') lowers.Add(c);
                 else if (char.IsNumber(c)) numbers.Add(c);
                 else others.Add(c);
             }

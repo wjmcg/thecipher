@@ -66,5 +66,23 @@ namespace Ciphers.Test
             char expected = (char) 0x2610;
             Assert.AreEqual(expected, ise.Map((char)0xFFFF), "Invlid character removal fails.");
         }
+
+
+        [TestMethod]
+        public void TestEncryptAllUpper()
+        {
+            string input = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            string expected = "DEFGHIJKLMNOPQRSTUVWXYZABC";
+            Assert.AreEqual(expected, ise.Map(input), "Upper all fails.");
+        }
+
+        [TestMethod]
+        public void TestEncryptAllLower()
+        {
+            string input = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToLowerInvariant();
+            string expected = "DEFGHIJKLMNOPQRSTUVWXYZABC".ToLowerInvariant();
+            Assert.AreEqual(expected, ise.Map(input), "Lower all fails.");
+        }
+
     }
 }
