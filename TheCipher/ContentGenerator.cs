@@ -15,7 +15,7 @@ namespace TheCipher
         public static StringContent MakeJsonPayload(string payload)
         {
             Return ret = new Return();
-            ret.Data = payload;
+            ret.Response = payload;
             string json = JsonConvert.SerializeObject(ret, Formatting.Indented);
             return new StringContent(json, Encoding.UTF8, "application/json");
         }
