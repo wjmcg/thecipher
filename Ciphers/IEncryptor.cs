@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ciphers
 {
-    public interface IStringEncryptor
+    public interface IEncryptor
     {
         string Map(string s);
+        char Map(char s);
     }
 }

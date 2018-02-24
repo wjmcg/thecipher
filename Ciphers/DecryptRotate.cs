@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ciphers
 {
-    public class DecryptRotate :  RotationCipher, IStringEncryptor
+    public class DecryptRotate :  RotationCipher, IEncryptor
     {
-        public DecryptRotate(int rotation) : base(rotation)
+        public DecryptRotate(int rotation) : base(-rotation)
         { }
-
-        public string Map(string s)
-        {
-            return "Decrypted!";
-        }
     }
 }

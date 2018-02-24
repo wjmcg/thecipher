@@ -30,6 +30,7 @@ namespace TheCipher
             {
                 if (kvp.Key.Equals("encrypt",StringComparison.InvariantCultureIgnoreCase))
                 {
+                    log.Info("Encryption specified.");
                     data = kvp.Value;
                     m = Mode.Encrypt;
                     break;
@@ -37,6 +38,7 @@ namespace TheCipher
 
                 if (kvp.Key.Equals("decrypt", StringComparison.InvariantCultureIgnoreCase))
                 {
+                    log.Info("Decryption specified.");
                     data = kvp.Value;
                     m = Mode.Decrypt;
                     break;
@@ -47,7 +49,7 @@ namespace TheCipher
             dynamic body = await req.Content.ReadAsAsync<object>();
 
             //Execute
-            IStringEncryptor ise;
+            IEncryptor ise;
 
             switch(m)
             {
@@ -58,9 +60,11 @@ namespace TheCipher
                     ise = new DecryptRotate(Constants.Rotation);
                     break;
                 case Mode.Unset:
+                    log.Info("Returning advice string.");
                     ise = new NullEncryptor("Please use ?encrypt=[StringToEncrypt] or ?decrypt=[StringToDecrypt]");
                     break;
                 default:
+                    log.Error("Encryption mode switch not recognised.");
                     throw new NotImplementedException("Crypto mode not valid.");
             }
 

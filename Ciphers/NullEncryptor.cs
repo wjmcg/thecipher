@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ciphers
 {
-    public class NullEncryptor : IStringEncryptor
+    public class NullEncryptor : IEncryptor
     {
         private readonly string message;
 
@@ -15,9 +15,9 @@ namespace Ciphers
             this.message = message;
         }
 
-        public string Map(string s)
-        {
-            return message;
-        }
+        public string Map(string s) => message;
+
+        public char Map(char s) => s;
+
     }
 }

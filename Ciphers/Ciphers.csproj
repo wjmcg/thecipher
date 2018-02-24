@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IStringEncryptor.cs" />
+    <Compile Include="IEncryptor.cs" />
     <Compile Include="DecryptRotate.cs" />
     <Compile Include="EncryptRotate.cs" />
     <Compile Include="NullEncryptor.cs" />

@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace Ciphers
 {
-    public class EncryptRotate : RotationCipher, IStringEncryptor
+    public class EncryptRotate : RotationCipher, IEncryptor
     {
 
         public EncryptRotate(int rotation) : base(rotation)
         { }
 
-        public string Map(string s)
-        {
-            return "Encrypted!";
-        }
     }
 }
